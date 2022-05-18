@@ -63,12 +63,12 @@ textarea{
 }
 
 input[type="text"]:valid, input[type="email"]:valid {
-    background: #fff url(../img/valid.png) no-repeat 97% center;
+    background: #fff url(/banners/valid.png) no-repeat 97% center;
     background-size: 13px 13px;
 }
 
 textarea:valid {
-    background: #fff url(../img/valid.png) no-repeat 97% center;
+    background: #fff url(/banners/valid.png) no-repeat 97% center;
     background-size: 13px 13px;
 }
 
@@ -108,4 +108,8 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color:   #38395d;
+}
+
+hr {
+    margin: 20px auto;
 }

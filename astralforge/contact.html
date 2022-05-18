@@ -11,11 +11,15 @@
   <link rel="stylesheet" href="style/interac.css" media="all">
   <link rel="stylesheet" href="style/form.css" media="all">
   <link rel="stylesheet" href="style/bs.css" media="all">
+  <link rel="stylesheet" href="style/map.css" media="all">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&display=swap"
     rel="stylesheet">
+  <script src="scripy/form.js" defer></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
 
 </head>
 
@@ -50,7 +54,7 @@
     <!-- title                                             -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <div class="top">
-      <h1>Contact Us</h1>
+      <h2>Contact Us</h2>
     </div>
 
     <br>
@@ -90,10 +94,18 @@
 
     </section>
 
-    <br>
     <hr>
-    <br>
-
+    <div class="map-container">
+      <div class="map-section">
+        <h2>Our office</h2>
+        <div class="map-cont">
+          <div id="map"></div>
+          <div class="dot">
+            <div class="pulse-dot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </main>
 
@@ -115,7 +127,7 @@
           </div>
         </div>
         <div class="copyright">
-          <p>&copy 2021 Super Website</p>
+          <p>&copy 2022 Astral Forge</p>
         </div>
       </div>
     </div>

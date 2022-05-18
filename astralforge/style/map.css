@@ -1,0 +1,57 @@
+.map-container {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.map-container h2 {
+	text-align: center;
+	font-size: 24px;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.map-cont {
+    margin-top: 10px;
+    height: 405px;
+    width: 720px;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: #2a93ff;
+    border-radius: 50%;
+    z-index: 2;
+    transform: scale(1);
+}
+
+.pulse-dot {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #2a93ff;
+    border-radius: 50%;
+    z-index: 2;
+    animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+        border: 2px solid #2a93ff;
+    } to {
+        transform: scale(2);
+        border: 2px solid rgb(42 147 255 / 0);
+    }
+}
