@@ -1,0 +1,53 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Media queries                                        */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+  
+/*
+   * Media queries are useful when you want to modify your site 
+   * or app depending on a device's general type (such as 
+   * print vs. screen) or specific characteristics and parameters 
+   * (such as screen resolution or browser viewport width)
+*/
+  
+@media screen and (min-width: 320px) {
+    nav { display: none; }
+    .mobile-nav { display: block; }
+}
+ 
+@media screen and (min-width: 580px) {
+   nav { display: none; }
+   .mobile-nav { display: block; }
+ 
+   .col-md-6 {
+     flex: 0 0 50%;
+     max-width: 50%;
+   }
+}
+ 
+@media screen and (min-width: 768px) {
+   .container, .row-container {
+     max-width: 800px;
+   }
+ 
+   nav { display: block; }
+   .mobile-nav { display: none; }
+ 
+   .col-md-6 {
+     flex: 0 0 50%;
+     max-width: 50%;
+   }
+}
+ 
+@media screen and (min-width: 1024px) {
+   .container, .row-container {
+     max-width: 1140px;
+   }
+ 
+   nav { display: block; }
+   .mobile-nav { display: none; }
+ 
+   .col-lg-3 {
+     flex: 0 0 25%;
+     width: 25%;
+   }
+}

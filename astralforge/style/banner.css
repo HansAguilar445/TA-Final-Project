@@ -1,0 +1,31 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Main banner                                          */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.banner {
+    height: 540px;
+    background: #fff url("/astralforge/banners/bnnr.jpg") center center / cover no-repeat;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .banner h2 {
+    font-size: 46px;
+    font-weight: 300;
+    color: #fff;
+  }
+  
+  .banner h3 {
+    margin-top: 4px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+  }
+  
+  hr {
+    width: 80px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-top: 3px solid #d94d3f;
+  }
