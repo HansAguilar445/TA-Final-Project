@@ -59,11 +59,8 @@ header div {
   height: 56px;
 }
 
-.title h1 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #fff;
-  
+.title a {
+  text-decoration: none;
 }
 
 .title a h1  {
@@ -109,6 +106,18 @@ nav ul li a:hover {
 
 nav ul li + li {
   margin-left: 25px;
+}
+
+.mobile-nav {
+  overflow: hidden;
+}
+
+.mobile-nav p i {
+  line-height: 56px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */

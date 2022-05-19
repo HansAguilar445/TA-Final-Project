@@ -6,18 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Astral Forge contact</title>
   <link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon">
-  <link rel="stylesheet" href="style/temp.css" media="all">
-  <link rel="stylesheet" href="style/banner.css" media="all">
-  <link rel="stylesheet" href="style/interac.css" media="all">
-  <link rel="stylesheet" href="style/form.css" media="all">
-  <link rel="stylesheet" href="style/bs.css" media="all">
-  <link rel="stylesheet" href="style/map.css" media="all">
+  <link rel="stylesheet" href="assets/style/temp.css" media="all">
+  <link rel="stylesheet" href="assets/style/banner.css" media="all">
+  <link rel="stylesheet" href="assets/style/interac.css" media="all">
+  <link rel="stylesheet" href="assets/style/form.css" media="all">
+  <link rel="stylesheet" href="assets/style/bs.css" media="all">
+  <link rel="stylesheet" href="assets/style/style.css" media="all">
+  <link rel="stylesheet" href="assets/style/map.css" media="all">
+  <link rel="stylesheet" href="assets/style/cookies.css" media="all">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-  <script src="scripy/form.js" defer></script>
+  <script src="assets/scripts/form.js" defer></script>
+  <script src="assets/scripts/cookies.js" defer></script>
   <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
 	<link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
 </head>
@@ -85,8 +89,8 @@
           </fieldset>
           <br>
 
+          <input type="button" id="send" value="Submit">
           <input type="reset" class="reset" value="Clear">
-          <input type="button" id="send" value="submit">
         </form>
 
       </div>
@@ -110,8 +114,53 @@
     </div>
 
   </main>
-
-  <br> <br> <br> <br>
+  <dialog id="initial-modal" class="cookie">
+    <h2>Cookies</h2>
+    <p>
+      We use cookies to improve your experience on our website. By clicking
+      <strong>Accept all</strong>, you agree to the use of cookies for
+      marketing and analytics purposes.
+    </p>
+    <div class="buttons">
+      <button id="accept-all">Accept all</button>
+      <button id="manage">Manage</button>
+    </div>
+  </dialog>
+  <dialog id="options" class="cookie">
+    <h2>Manage cookies</h2>
+    <form name="cookie-management">
+      <div class="selector">
+        <h3>Browser</h3>
+        <label class="switch">
+          <input type="checkbox" name="browser">
+          <span class="slider round"></span>
+          </label>
+      </div>
+      <div class="selector">
+        <h3>Operating system</h3>				
+        <label class="switch">
+          <input type="checkbox" name="os">
+          <span class="slider round"></span>
+          </label>	
+      </div>
+      <div class="selector">
+        <h3>Screen width</h3>
+        <label class="switch">
+          <input type="checkbox" name="width">
+          <span class="slider round"></span>
+          </label>
+      </div>
+      <div class="selector">
+        <h3>Screen height</h3>
+        <label class="switch">
+          <input type="checkbox" name="height">
+          <span class="slider round"></span>
+          </label>
+      </div>
+      <input class="button" type="button" name="save" value="Save preferences">
+    </form>
+  </dialog>
+  <br> <br> 
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!-- footer                                            -->
