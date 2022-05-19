@@ -82,31 +82,31 @@ save.addEventListener('click', function() {
 	let rejectedCookies = 0;
 	
 	if(browser.checked) {
-		setCookie('Browser', getBrowser(), { 'max-age': 15 });
+		setCookie('Browser', getBrowser(), { 'max-age': 120 });
 	} else {
 		rejectedCookies++;
 	}
 
 	if(os.checked) {
-		setCookie('Operating system', getOperatingSystem(), { 'max-age': 15 });
+		setCookie('Operating system', getOperatingSystem(), { 'max-age': 120 });
 	} else {
 		rejectedCookies++;
 	}
 
 	if(width.checked) {
-		setCookie('Screen width', screen.width, { 'max-age': 15} );
+		setCookie('Screen width', screen.width, { 'max-age': 120} );
 	} else {
 		rejectedCookies++;
 	}
 
 	if(height.checked) {
-		setCookie('Screen height', screen.height, { 'max-age': 15} );
+		setCookie('Screen height', screen.height, { 'max-age': 120} );
 	} else {
 		rejectedCookies++;
 	}
 
 	if(rejectedCookies === 4) {
-		setCookie('Rejected', 'true', { 'max-age': 15 });
+		setCookie('Rejected', 'true', { 'max-age': 120 });
 	}
 	
 	options.close();

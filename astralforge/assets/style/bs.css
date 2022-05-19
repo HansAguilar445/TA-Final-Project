@@ -9,7 +9,41 @@
 }
 
 .about p{
+    margin-top: 25px;
     margin-left: 100px;
     margin-right: 100px;
 }
  
+.feedback{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fdbck {
+    margin-top: 15px;
+    width: 300px;
+    /*min-width: 100%;*/
+    /* height: 160px; */
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    resize: none;
+    overflow: auto;
+    transition: border-color .25s ease-in-out;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+.mptxt{
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+}

@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="assets/style/interac.css" media="all">
   <link rel="stylesheet" href="assets/style/form.css" media="all">
   <link rel="stylesheet" href="assets/style/bs.css" media="all">
-  <link rel="stylesheet" href="assets/style/style.css" media="all">
   <link rel="stylesheet" href="assets/style/map.css" media="all">
   <link rel="stylesheet" href="assets/style/cookies.css" media="all">
 
@@ -35,7 +34,10 @@
     <header>
       <div class="container flexbox">
         <div class="title">
-          <a href="index.html"><h1>Astral Forge</h1></a>
+          <img class="logo" src="assets/img/favicon.png"/>
+          <a href="index.html">
+            <h1>Astral Forge</h1>
+          </a>
         </div>
         <nav>
           <ul>
@@ -60,7 +62,9 @@
       <h1>Contact Us</h1>
     </div>
 
-    <br>
+    <hr>
+
+    <p class="mptxt">All fields are mandatory.</p>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- form                                              -->
@@ -90,20 +94,25 @@
           <br>
 
           <input type="button" id="send" value="Submit">
-          <input type="reset" class="reset" value="Clear">
         </form>
 
       </div>
 
     </section>
 
+    <div class="feedback">
+    <p id="fdbck" class="fdbck hidden"></p>
+    </div>
+
     <br>
-    <hr>
+    <br>
     <br>
 
     <div class="map-container">
       <div class="map-section">
-        <h2>Our office</h2>
+        <h2>Our Location</h2>
+        <hr>
+        <P class="mptxt">Come and check out our workshop.</P>
         <div class="map-cont">
           <div id="map"></div>
           <div class="dot">

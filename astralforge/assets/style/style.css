@@ -12,7 +12,7 @@
 }
 
 body{
-  background-color: rgb(197, 197, 197);
+  background-color: rgb(241, 241, 245);
 }
 
 body, input, textarea {
@@ -57,6 +57,9 @@ header div {
 
 .title {
   height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .title a {
@@ -64,7 +67,7 @@ header div {
 }
 
 .title a h1  {
-  line-height: 56px;
+  /* line-height: 56px; */
   font-size: 18px;
   color: #fff;
   font-weight: 600;
@@ -72,6 +75,13 @@ header div {
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 25px;
 }
 
 nav {

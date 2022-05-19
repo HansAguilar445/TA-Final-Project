@@ -32,7 +32,6 @@
   
 hr {
   width: 80px;
-  margin: 0 auto;
-  margin-top: 10px;
-  border-top: 3px solid #d94d3f;
+  margin: 10px auto;
+  border-top: 3px solid #ff7b00;
 }
